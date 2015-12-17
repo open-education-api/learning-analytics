@@ -117,12 +117,25 @@ paths:
         default:
           description: Error
           schema:
-            $ref: "/definitions/ErrorResponse"
+            $ref: "#/definitions/ErrorResponse"
   /object:
     x-swagger-router-controller: object
     get:
       description: The Object of a Statement can be an Activity, Agent/Group, Sub-Statement, or Statement Reference. It is the "this" part of the Statement, i.e. "I did this".
-  
+      tags:
+        - learning analytics
+        - open onderwijsapi
+      operationId: object
+      responses:
+        "200":
+          description: Success
+          schema: 
+            $ref: "#/definitions/ObjectResponse"
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/ErrorResponse"
+            
   /timestamp:
     x-swagger-router-controller: timestamp
     get:
@@ -135,11 +148,11 @@ paths:
         "200":
           description: Success
           schema:
-            $ref: "/definitions/TimestampResponse"
+            $ref: "#/definitions/TimestampResponse"
         default:
           description: Error
           schema:
-            $ref: "#definitions/ErrorResponse"
+            $ref: "#/definitions/ErrorResponse"
               
 # complex objects have schema definitions
 definitions:
@@ -167,4 +180,40 @@ definitions:
     properties:
       recipeId:
         type: string
+  VerbResponse:
+    required:
+      - id
+    properties:
+      id:
+        type: string
+      display:
+        type: object
+      label:
+        type: string
+      description:
+        type: string
+        # language map rfc5646
+  StudyProgressResponse:
+    required:
+      - message
+    properties:
+      message:
+        type: string
+  ObjectResponse:
+    required:
+      - objectType
+    properties:
+      objectType:
+        type: string
+      id:
+        type: string
+  TimestampResponse:
+    required:
+      - message
+    properties:
+      message:
+        type: string
         
+      
+      
+      
