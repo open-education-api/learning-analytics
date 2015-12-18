@@ -101,14 +101,14 @@ paths:
           description: Error
           schema:
             $ref: "#/definitions/ErrorResponse"
-  /verb:
-    x-swagger-router-controller: verb
+  /verbs:
+    x-swagger-router-controller: verbs
     get:
-      description: The Verb defines the action between Actor and Activity
+      description: List of Verbs. The Verb defines the action between Actor and Activity
       tags:
         - learning analytics
         - open onderwijsapi
-      operationId: verb
+      operationId: listVerbs
       responses:
         "200":
           description: Success
@@ -188,6 +188,7 @@ definitions:
         type: string
       display:
         type: object
+        description: "Key - value pair, where key is language code (as RFC 5646 Language Tag) and value is the human readable representation of the Verb in one or more languages., e.g. \"en_US\": \"mastered\""
       label:
         type: string
       description:
@@ -213,7 +214,7 @@ definitions:
     properties:
       message:
         type: string
-        
+    
       
       
       
