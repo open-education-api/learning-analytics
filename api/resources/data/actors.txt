@@ -1,0 +1,10 @@
+Manuela Velasco,manuela.velasco50@example.com
+Ian Kelly,ian.kelly81@example.com
+Darlene Snyder,darlene.snyder95@example.com
+Shawn Spencer,shawn.spencer56@example.com
+Lori Jimenez,lori.jimenez58@example.com
+Aubree Jensen,aubree.jensen86@example.com
+Caroline Wood,caroline.wood61@example.com
+Perry Mitchell,perry.mitchell43@example.com
+Gordon Barnes,gordon.barnes45@example.com
+Melvin Patterson,melvin.patterson48@example.com
