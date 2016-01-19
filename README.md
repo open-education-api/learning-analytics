@@ -37,11 +37,8 @@ Although not necessary you can modify API definitions in a convenient way:
 
 ## OpenLRS
 OpenLRS is a secure, standards-based, standalone Learning Record Store. OpenLRS was built to fill the need for a high i/o storage mechanism for an open learning analytics environment.
-
-[OpenLRS](https://github.com/Apereo-Learning-Analytics-Initiative/OpenLRS)
-
-[http://apereo-learning-analytics-initiative.github.io/OpenLRS](http://apereo-learning-analytics-initiative.github.io/OpenLRS)
-
+* [http://apereo-learning-analytics-initiative.github.io/OpenLRS](http://apereo-learning-analytics-initiative.github.io/OpenLRS) (project page)
+* [OpenLRS](https://github.com/Apereo-Learning-Analytics-Initiative/OpenLRS) (github repo)
 
 #### Requirements
 * JDK 7+
