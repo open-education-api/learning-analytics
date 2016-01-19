@@ -353,13 +353,13 @@
                                             &quot;objectType&quot;: &quot;Agent&quot;&#xd;
                                             },&#xd;
                                             &quot;verb&quot;: {&#xd;
-                                            &quot;id&quot;: &quot;http://adlnet.gov/expapi/verbs/${VERB}&quot;,&#xd;
+                                            &quot;id&quot;: &quot;https://w3id.org/xapi/adl/verbs/${VERB}&quot;,&#xd;
                                             &quot;display&quot;: {&#xd;
                                             &quot;en-US&quot;: &quot;${VERB}&quot;&#xd;
                                             }&#xd;
                                             },&#xd;
                                             &quot;object&quot;: {&#xd;
-                                            &quot;id&quot;: &quot;http://adlnet.gov/expapi/activities/${OBJECT}&quot;,&#xd;
+                                            &quot;id&quot;: &quot;https://w3id.org/xapi/adl/activities/${OBJECT}&quot;,&#xd;
                                             &quot;objectType&quot;: &quot;Activity&quot;,&#xd;
                                             &quot;definition&quot;: {&#xd;
                                             &quot;name&quot;: {&#xd;
