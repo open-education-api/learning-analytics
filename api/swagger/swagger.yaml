@@ -166,7 +166,14 @@ paths:
           description: Success
           examples:
             application/json: |-
-
+                {
+                     "metadata": {
+                     "version": "1.32a",
+                     "totalItems": 2,
+                     "totalPages": 1,
+                     "pageSize": 10
+                     },
+                     "data": [
                 {
                   "statements": [{
                     "id": "6ed8acd8-9f57-4cee-ba4f-3cbd07c0ebdf",
@@ -222,7 +229,7 @@ paths:
                             "stored": "2016-01-19T14:06:12Z"
                         }]
                     }
-
+                ]}
           schema:
             $ref: "#/definitions/StatementsResponse"
           
