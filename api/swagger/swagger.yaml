@@ -139,7 +139,7 @@ paths:
   /timestamp:
     x-swagger-router-controller: timestamp
     get:
-      description: The time at which the experience occurred (ISO 8601)
+      description: The time at which the experience occurred (ISO8601)
       tags:
         - learning analytics
         - open onderwijsapi
@@ -153,7 +153,127 @@ paths:
           description: Error
           schema:
             $ref: "#/definitions/ErrorResponse"
-              
+  /statements:
+    x-swagger-router-controller: statements
+    get:
+      description: List of xAPI statements
+      tags:
+        - learning analytics
+        - open onderwijsapi
+      operationId: listStatements
+      responses:
+        200:
+          description: Success
+          examples:
+            application/json: |-
+
+                {
+                  "statements": [{
+                    "id": "6ed8acd8-9f57-4cee-ba4f-3cbd07c0ebdf",
+                    "actor": {
+                      "objectType": "Agent",
+                      "mbox": "mailto:darlene.snyder95@example.com",
+                      "name": "Darlene Snyder"
+                    },
+                    "verb": {
+                      "id": "http://adlnet.gov/expapi/verbs/attempted",
+                      "display": {
+                        "en-US": "attempted"
+                      }
+                    },
+                    "object": {
+                                "id": "http://adlnet.gov/expapi/activities/course",
+                                "objectType": "Activity",
+                                "definition": {
+                                    "name": {
+                                        "en-US": "course"
+                                    },
+                                    "description": {
+                                        "en-US": "course"
+                                    }
+                                }
+                            },
+                            "stored": "2016-01-19T14:06:11Z"
+                        }, {
+                            "id": "bf7daae7-ba14-4605-8c6e-7fc25d72190b",
+                            "actor": {
+                                "objectType": "Agent",
+                                "mbox": "mailto:melvin.patterson48@example.com",
+                                "name": "Melvin Patterson"
+                            },
+                            "verb": {
+                                "id": "http://adlnet.gov/expapi/verbs/imported",
+                                "display": {
+                                    "en-US": "imported"
+                                }
+                            },
+                            "object": {
+                                "id": "http://adlnet.gov/expapi/activities/module",
+                                "objectType": "Activity",
+                                "definition": {
+                                    "name": {
+                                        "en-US": "module"
+                                    },
+                                    "description": {
+                                        "en-US": "module"
+                                    }
+                                }
+                            },
+                            "stored": "2016-01-19T14:06:12Z"
+                        }]
+                    }
+
+          schema:
+            $ref: "#/definitions/StatementsResponse"
+          
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/ErrorResponse"
+    post:
+      description: Create statement
+      tags:
+        - learning analytics
+        - open onderwijsapi
+      operationId: createStatement
+      
+      parameters:
+        - name: body
+          in: body
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Success
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/ErrorResponse"        
+  /statements/{statementId}:
+    x-swagger-router-controller: statements
+    get:
+      description: Get statement based on statementId
+      tags:
+        - learning analytics
+        - open onderwijsapi
+      operationId: getStatementById
+      parameters:
+        - name: statementId
+          in: path
+          required: true
+          description: The id of the statement to retrieve
+          type: string
+      responses:
+        "200":
+          description: Success
+          schema:
+            $ref: "#/definitions/StatementByIdResponse"
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/ErrorResponse"
+
 # complex objects have schema definitions
 definitions:
   HelloWorldResponse:
@@ -214,7 +334,25 @@ definitions:
     properties:
       message:
         type: string
-    
+  StatementsResponse:
+    properties:
+      statements:
+        type: array
+        items:
+          type: object
+          properties:
+            id:
+              type: string
+            actor:
+              type: object
+              properties:
+                mbox:
+                  type: string
+  StatementByIdResponse:
+    properties:
+      message:
+        type: string
+  
       
       
       
