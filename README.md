@@ -77,6 +77,11 @@ Credits go to Alan Berg for his work on [LRS load testing scrips](https://github
 Note the generated statements consist of combinations of verbs, actors, objects/activities and do not necessary make sense.
 
 
+## xAPI swagger
+The xAPI specification is already defined in swagger it seems. The [xAPI-swagger repo](https://github.com/TryxAPI/xapi-swagger) hosts a yaml file which can be loaded
+into Swagger UI so you can explore it. Here is the [visualization of xAPI specification](http://editor.swagger.io/#/?import=https://raw.githubusercontent.com/TryxAPI/xapi-swagger/master/xapi-swagger.yaml).
+
+
 
 Colons can be used to align columns.
 
