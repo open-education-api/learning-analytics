@@ -83,7 +83,7 @@ Endpoints '/verbs' and '/recipes' do not exist in the xAPI specification. Howeve
 "Define and document the verbs you use in your statements. This documentation is the beginning of a controlled vocabulary that will help to ensure your organization uses verbs and statements consistently in future xAPI projects. If your organization has been working with xAPI for a while, make sure you follow the verb usage standards established in previous projects."
 [Source](http://www.learningsolutionsmag.com/articles/1526/five-things-a-web-developer-needs-to-know-about-the-xapi).
 
-Timestamps used are in '2016-01-19T14:06:12Z' format (ISO 8601 UTC/Zulu)
+Timestamps used are in '2016-01-19T14:06:12Z' format (ISO 8601 UTC/Zulu).
 
 In this PoC setup the open educational api proxies requests to the LRS backend and uses basic auth to connect to it. The open eductionel API uses oauth for authorization. 
 Personalized queries ('my' statements) are possible by identifying the user based on the token being used, and query the LRS with agent filtering.
@@ -102,3 +102,11 @@ into Swagger UI so you can explore it. Here is the [visualization of xAPI specif
 
 
 ## Standard recipes
+Recipes define xAPI statements. A recipe is a standard way of expressing a particular type of experience. It provides a common language and prevents the use of different words saying the same thing.
+Recipes allow different systems to talk about things people do using the same words. Sharing of definitions is important.
+The article 'Dutch cooking with xAPI recipes and the flavour of various Learning Record Stores' (by A.Berg, H. Drachser, M. Scheffel, S. Ternier, M. Specht) provides an overview of standard recipes used by various institutions.
+
+https://goo.gl/TOC9wA
+
+
+https://goo.gl/uHhwSH
