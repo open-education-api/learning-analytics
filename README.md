@@ -95,7 +95,7 @@ Endpoints '/verbs' and '/recipes' do not exist in the xAPI specification. Howeve
 Timestamps used are in '2016-01-19T14:06:12Z' format (ISO 8601 UTC/Zulu)
 
 In this PoC setup the open educational api proxies requests to the LRS backend and uses basic auth to connect to it. The open eductionel API uses oauth for authorization. 
-Personalized queries ('my' statements) are possible by identifying the user based on the token being used, and query the LRS with filtering.
+Personalized queries ('my' statements) are possible by identifying the user based on the token being used, and query the LRS with agent filtering.
 For example: https://lrs/xAPI/statements?agent={"objectType": "Agent", "name": "Darlene Snyder", "mbox": "mailto:darlene.snyder95@example.com"}
 
 Apart from exposing learning activities from a Learning Record Store, it could be wise to opt for a Learning Record Warehouse. Such a data warehouse could analyse the learning record store based on predictive models and can provide convenience methods for students and staff.
