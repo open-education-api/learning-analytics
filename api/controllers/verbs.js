@@ -10,23 +10,6 @@ module.exports = {
 
 function listVerbs(req, res) {
 
-    /*
-     var fileName = '../resources/verbs.json';
-
-     fs.readFile(path.normalize(__dirname + '/' + fileName), 'utf8', function (err, data) {
-     if (err) {
-     return console.log(err);
-     }
-
-     res.header('Content-Type', 'application/javascript');
-     console.log(data);
-     //res.send(data);
-     res.json(JSON.stringify(data));
-     //res.json(data);
-
-     });
-     */
-
     var data = [
         {
             "label": "abandoned",
@@ -34,7 +17,7 @@ function listVerbs(req, res) {
             "id": "https://w3id.org/xapi/adl/verbs/abandoned",
             "display": {
                 "en_US": "abandoned",
-                "nl_NL": ""
+                "nl_NL": "verlaten"
             }
         },
         {
@@ -43,7 +26,7 @@ function listVerbs(req, res) {
             "id": "https://w3id.org/xapi/adl/verbs/answered",
             "display": {
                 "en_US": "answered",
-                "nl_NL": ""
+                "nl_NL": "antwoordde"
             }
         },
         {
@@ -52,7 +35,7 @@ function listVerbs(req, res) {
             "id": "https://w3id.org/xapi/adl/verbs/asked",
             "display": {
                 "en_US": "asked",
-                "nl_NL": ""
+                "nl_NL": "gevraagd"
             }
         },
         {
@@ -61,7 +44,7 @@ function listVerbs(req, res) {
             "id": "https://w3id.org/xapi/adl/verbs/attempted",
             "display": {
                 "en_US": "attempted",
-                "nl_NL": ""
+                "nl_NL": "probeerde"
             }
         },
         {
@@ -70,7 +53,7 @@ function listVerbs(req, res) {
             "id": "https://w3id.org/xapi/adl/verbs/attended",
             "display": {
                 "en_US": "attended",
-                "nl_NL": ""
+                "nl_NL": "woonde bij"
             }
         },
         {
@@ -79,7 +62,7 @@ function listVerbs(req, res) {
             "id": "https://w3id.org/xapi/adl/verbs/commented",
             "display": {
                 "en_US": "commented",
-                "nl_NL": ""
+                "nl_NL": "becommentarieerde"
             }
         },
         {
@@ -88,7 +71,7 @@ function listVerbs(req, res) {
             "id": "https:\/\/w3id.org\/xapi\/adl\/verbs\/completed",
             "display": {
                 "en_US": "completed",
-                "nl_NL": ""
+                "nl_NL": "voltooide"
             }
         },
         {
@@ -97,7 +80,7 @@ function listVerbs(req, res) {
             "id": "https://w3id.org/xapi/adl/verbs/exited",
             "display": {
                 "en_US": "exited",
-                "nl_NL": ""
+                "nl_NL": "verliet"
             }
         },
         {
@@ -106,7 +89,7 @@ function listVerbs(req, res) {
             "id": "https://w3id.org/xapi/adl/verbs/experienced",
             "display": {
                 "en_US": "experienced",
-                "nl_NL": ""
+                "nl_NL": "ervaarde"
             }
         },
         {
@@ -115,7 +98,7 @@ function listVerbs(req, res) {
             "id": "https://w3id.org/xapi/adl/verbs/failed",
             "display": {
                 "en_US": "failed",
-                "nl_NL": ""
+                "nl_NL": "faalde"
             }
         },
         {
@@ -124,7 +107,7 @@ function listVerbs(req, res) {
             "id": "https://w3id.org/xapi/adl/verbs/imported",
             "display": {
                 "en_US": "imported",
-                "nl_NL": ""
+                "nl_NL": "importeerde"
             }
         },
         {
@@ -133,7 +116,7 @@ function listVerbs(req, res) {
             "id": "https://w3id.org/xapi/adl/verbs/initialized",
             "display": {
                 "en_US": "initialized",
-                "nl_NL": ""
+                "nl_NL": "ïnitialiseerde"
             }
         },
         {
@@ -142,7 +125,7 @@ function listVerbs(req, res) {
             "id": "https://w3id.org/xapi/adl/verbs/interacted",
             "display": {
                 "en_US": "interacted",
-                "nl_NL": ""
+                "nl_NL": "interacted"
             }
         },
         {
@@ -151,7 +134,7 @@ function listVerbs(req, res) {
             "id": "https://w3id.org/xapi/adl/verbs/launched",
             "display": {
                 "en_US": "launched",
-                "nl_NL": ""
+                "nl_NL": "trapte af"
             }
         },
         {
@@ -160,7 +143,7 @@ function listVerbs(req, res) {
             "id": "https://w3id.org/xapi/adl/verbs/logged-in",
             "display": {
                 "en_US": "logged-in",
-                "nl_NL": ""
+                "nl_NL": "logde in"
             }
         },
         {
@@ -169,7 +152,7 @@ function listVerbs(req, res) {
             "id": "https://w3id.org/xapi/adl/verbs/logged-out",
             "display": {
                 "en_US": "logged-out",
-                "nl_NL": ""
+                "nl_NL": "logde uit"
             }
         },
         {
@@ -178,7 +161,7 @@ function listVerbs(req, res) {
             "id": "https://w3id.org/xapi/adl/verbs/mastered",
             "display": {
                 "en_US": "mastered",
-                "nl_NL": ""
+                "nl_NL": "beheersde"
             }
         },
         {
@@ -187,7 +170,7 @@ function listVerbs(req, res) {
             "id": "https://w3id.org/xapi/adl/verbs/passed",
             "display": {
                 "en_US": "passed",
-                "nl_NL": ""
+                "nl_NL": "slaagde voor"
             }
         },
         {
@@ -196,7 +179,7 @@ function listVerbs(req, res) {
             "id": "https://w3id.org/xapi/adl/verbs/preferred",
             "display": {
                 "en_US": "preferred",
-                "nl_NL": ""
+                "nl_NL": "prefereerde"
             }
         },
         {
@@ -205,7 +188,7 @@ function listVerbs(req, res) {
             "id": "https://w3id.org/xapi/adl/verbs/progressed",
             "display": {
                 "en_US": "progressed",
-                "nl_NL": ""
+                "nl_NL": "vorderde"
             }
         },
         {
@@ -214,7 +197,7 @@ function listVerbs(req, res) {
             "id": "https://w3id.org/xapi/adl/verbs/registered",
             "display": {
                 "en_US": "registered",
-                "nl_NL": ""
+                "nl_NL": "registreerde"
             }
         },
         {
@@ -223,7 +206,7 @@ function listVerbs(req, res) {
             "id": "https://w3id.org/xapi/adl/verbs/responded",
             "display": {
                 "en_US": "responded",
-                "nl_NL": ""
+                "nl_NL": "reageerde"
             }
         },
         {
@@ -259,7 +242,7 @@ function listVerbs(req, res) {
             "id": "https://w3id.org/xapi/adl/verbs/shared",
             "display": {
                 "en_US": "shared",
-                "nl_NL": ""
+                "nl_NL": "deelde"
             }
         },
         {
@@ -268,7 +251,7 @@ function listVerbs(req, res) {
             "id": "https://w3id.org/xapi/adl/verbs/suspended",
             "display": {
                 "en_US": "suspended",
-                "nl_NL": ""
+                "nl_NL": "schorste"
             }
         },
         {
@@ -277,7 +260,7 @@ function listVerbs(req, res) {
             "id": "https://w3id.org/xapi/adl/verbs/terminated",
             "display": {
                 "en_US": "terminated",
-                "nl_NL": ""
+                "nl_NL": "beëindigde"
             }
         },
         {
@@ -286,7 +269,7 @@ function listVerbs(req, res) {
             "id": "https://w3id.org/xapi/adl/verbs/voided",
             "display": {
                 "en_US": "voided",
-                "nl_NL": ""
+                "nl_NL": "vervallen"
             }
         },
         {
@@ -295,7 +278,7 @@ function listVerbs(req, res) {
             "id": "https://w3id.org/xapi/adl/verbs/waived",
             "display": {
                 "en_US": "waived",
-                "nl_NL": ""
+                "nl_NL": "waived"
             }
         }
     ];
