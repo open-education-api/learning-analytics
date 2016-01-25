@@ -82,6 +82,22 @@ Now that we have our locally running LRS filled with sample data, we can start (
 
 The open educational API acts as a facade in front of the LRS. We can access it via the Swagger UI interface at http://127.0.0.1:10010/docs/ and fire requests.
 
+
+##  Discussions and suggestions
+
+In general responses from the evolving open educational API contain a 'meta' and a 'data' part in their body. If we would apply this pattern and wrap responses from a LRS it would
+break the xAPI specification. We should question ourselves if this is desirable.
+
+Endpoints '/verbs' and '/recipes' do not exist in the xAPI specification. However it can be useful to get an overview of verbs and recipes used at an institution to get some sort of consistency in the statements which are defined and generated. 
+"Define and document the verbs you use in your statements. This documentation is the beginning of a controlled vocabulary that will help to ensure your organization uses verbs and statements consistently in future xAPI projects. If your organization has been working with xAPI for a while, make sure you follow the verb usage standards established in previous projects."
+[source](http://www.learningsolutionsmag.com/articles/1526/five-things-a-web-developer-needs-to-know-about-the-xapi)
+
+Apart from exposing learning activities from a Learning Record Store, it could be wise to opt for a Learning Record Warehouse. Such a data warehouse could analyse the learning record store based on predictive models and can provide convenience methods for students and staff.
+Endpoints such as '/studyprogress', '/risk' or '/intervention' could expose data about learning activities on a meta level.
+
+Timestamps used are in '2016-01-19T14:06:12Z' format (ISO 8601 UTC/Zulu)
+
+
 ## xAPI swagger
 The xAPI specification is already defined in swagger it seems. The [xAPI-swagger repo](https://github.com/TryxAPI/xapi-swagger) hosts a yaml file which can be loaded
 into Swagger UI so you can explore it. Here is the [visualization of xAPI specification](http://editor.swagger.io/#/?import=https://raw.githubusercontent.com/TryxAPI/xapi-swagger/master/xapi-swagger.yaml).
