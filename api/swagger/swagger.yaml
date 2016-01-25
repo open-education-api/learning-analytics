@@ -2,7 +2,7 @@ swagger: "2.0"
 info:
   version: "0.0.1"
   title: OpenOnderwijsAPI - Learning Analytics
-  description: integrating learning analytics recipes
+  description: exploring learning analytics integration
 # during dev, should point to your local machine
 host: localhost:10010
 # basePath prefixes all resource paths 
@@ -115,41 +115,42 @@ paths:
           description: Error
           schema:
             $ref: "#/definitions/ErrorResponse"
-  /object:
-    x-swagger-router-controller: object
-    get:
-      description: The Object of a Statement can be an Activity, Agent/Group, Sub-Statement, or Statement Reference. It is the "this" part of the Statement, i.e. "I did this".
-      tags:
-        - learning analytics
-        - open onderwijsapi
-      operationId: object
-      responses:
-        "200":
-          description: Success
-          schema: 
-            $ref: "#/definitions/ObjectResponse"
-        default:
-          description: Error
-          schema:
-            $ref: "#/definitions/ErrorResponse"
+#  /object:
+#    x-swagger-router-controller: object
+#    get:
+#      description: The Object of a Statement can be an Activity, Agent/Group, Sub-Statement, or Statement Reference. It is the "this" part of the Statement, i.e. "I did this".
+#      tags:
+#        - learning analytics
+#        - open onderwijsapi
+#      operationId: object
+#      responses:
+#        "200":
+#          description: Success
+#          schema:
+#            $ref: "#/definitions/ObjectResponse"
+#        default:
+#          description: Error
+#          schema:
+#            $ref: "#/definitions/ErrorResponse"
             
-  /timestamp:
-    x-swagger-router-controller: timestamp
-    get:
-      description: The time at which the experience occurred (ISO8601)
-      tags:
-        - learning analytics
-        - open onderwijsapi
-      operationId: timestamp
-      responses:
-        "200":
-          description: Success
-          schema:
-            $ref: "#/definitions/TimestampResponse"
-        default:
-          description: Error
-          schema:
-            $ref: "#/definitions/ErrorResponse"
+#  /timestamp:
+#    x-swagger-router-controller: timestamp
+#    get:
+#      description: The time at which the experience occurred (ISO8601)
+#      tags:
+#        - learning analytics
+#        - open onderwijsapi
+#      operationId: timestamp
+#      responses:
+#        "200":
+#          description: Success
+#          schema:
+#            $ref: "#/definitions/TimestampResponse"
+#        default:
+#          description: Error
+#          schema:
+#            $ref: "#/definitions/ErrorResponse"
+
   /statements:
     x-swagger-router-controller: statements
     get:
