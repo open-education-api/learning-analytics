@@ -104,7 +104,7 @@ paths:
   /verbs:
     x-swagger-router-controller: verbs
     get:
-      description: List of Verbs. The Verb defines the action between Actor and Activity
+      description: List of Verbs. The Verb defines the action between Actor and Activity. Based on 'http://xapi.vocab.pub/datasets/adl/verbs/'
       tags:
         - learning analytics
         - open onderwijsapi
