@@ -106,7 +106,5 @@ Recipes define xAPI statements. A recipe is a standard way of expressing a parti
 Recipes allow different systems to talk about things people do using the same words. Sharing of definitions is important.
 The article 'Dutch cooking with xAPI recipes and the flavour of various Learning Record Stores' (by A.Berg, H. Drachser, M. Scheffel, S. Ternier, M. Specht) provides an overview of standard recipes used by various institutions.
 
-https://goo.gl/TOC9wA
-
-
-https://goo.gl/uHhwSH
+* https://goo.gl/TOC9wA (a registry of the complete statements in JSON format)
+* https://goo.gl/uHhwSH (a spreadsheet with the most important information needed for each statement)
