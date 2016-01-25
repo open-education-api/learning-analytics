@@ -50,7 +50,7 @@ paths:
     get:
       description: Returns list of available 'Recipes'
       tags:
-        - recipes
+        - open onderwijsapi
       operationId: recipes
       responses:
         "200":
@@ -66,7 +66,7 @@ paths:
     get:
       description: Returns details of 'Recipe'
       tags:
-        - recipes
+        - open onderwijsapi
       operationId: recipeDetails
       parameters:
         - name: recipeId
@@ -86,10 +86,8 @@ paths:
   /studyprogress:
     x-swagger-router-controller: studyprogress
     get:
-      description: Returns studyprogress information from Learning Record Store
+      description: Returns studyprogress information from Learning Record Data Warehouse
       tags:
-        - studyprogress
-        - learning analytics
         - open onderwijsapi
       operationId: studyProgress
       responses:
@@ -106,7 +104,6 @@ paths:
     get:
       description: List of Verbs. The Verb defines the action between Actor and Activity. Based on 'http://xapi.vocab.pub/datasets/adl/verbs/'
       tags:
-        - learning analytics
         - open onderwijsapi
       operationId: listVerbs
       responses:
@@ -159,7 +156,6 @@ paths:
       description: List of xAPI statements
       tags:
         - learning analytics
-        - open onderwijsapi
       operationId: listStatements
       responses:
         200:
@@ -241,7 +237,6 @@ paths:
       description: Create statement
       tags:
         - learning analytics
-        - open onderwijsapi
       operationId: createStatement
       
       parameters:
@@ -263,7 +258,6 @@ paths:
       description: Get statement based on statementId
       tags:
         - learning analytics
-        - open onderwijsapi
       operationId: getStatementById
       parameters:
         - name: statementId
