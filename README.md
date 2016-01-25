@@ -48,6 +48,7 @@ OpenLRS is a secure, standards-based, standalone Learning Record Store. OpenLRS 
 * mvn clean package spring-boot:run
 
 This starts OpenLRS on port 8080 using an in-memory datastore. The LRS is accessible at [http://127.0.0.1:8080] (http://127.0.0.1:8080) but has no gui.
+Note the in-memory database lacks some functionality, filtering doesn't work for instance. Please refer to the OpenLRS documentation to switch to permanent storage.
 
 
 
