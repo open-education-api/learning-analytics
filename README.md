@@ -79,6 +79,7 @@ Note the generated statements consist of combinations of verbs, actors, objects/
 
 Now that we have our locally running LRS filled with sample data, we can start (if not already running) our open educational api:
 * node app.js
+
 The open educational API acts as a facade in front of the LRS. We can access it via the Swagger UI interface at http://127.0.0.1:10010/docs/ and fire requests.
 
 ## xAPI swagger
