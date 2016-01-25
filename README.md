@@ -108,22 +108,3 @@ as learning activities. The open educational API could internally generate xAPI 
 ## xAPI swagger
 The xAPI specification is already defined in swagger it seems. The [xAPI-swagger repo](https://github.com/TryxAPI/xapi-swagger) hosts a yaml file which can be loaded
 into Swagger UI so you can explore it. Here is the [visualization of xAPI specification](http://editor.swagger.io/#/?import=https://raw.githubusercontent.com/TryxAPI/xapi-swagger/master/xapi-swagger.yaml).
-
-
-
-Colons can be used to align columns.
-
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
-
-There must be at least 3 dashes separating each header cell.
-The outer pipes (|) are optional, and you don't need to make the 
-raw Markdown line up prettily. You can also use inline Markdown.
-
-Markdown | Less | Pretty
---- | --- | ---
-*Still* | `renders` | **nicely**
-1 | 2 | 3
