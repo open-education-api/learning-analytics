@@ -2,20 +2,11 @@ Open Onderwijs API and Learning Analytics
 ======
 
 This project in an attempt to extend the [Open Educational API] (https://www.openonderwijsapi.nl/) (Open Onderwijs API) with learning analytics based on [xAPI statements] (https://github.com/adlnet/xAPI-Spec/blob/master/xAPI.md).
+It contains a locally running Learning Record Store, tooling to generate sample learning analytics data and API documentation which can be tested with actual requests.
 
-
-Learning Analytics
-
-Learning Record Store 
-Learning Record Warehouse
-
-
-Start editing api definitions: swagger project edit
-
-Start API: node app.js
-
-API documentation can be viewed and tried at http://127.0.0.1:10010/docs/
-Live editing of API definitions van be done in the browser at http://127.0.0.1:59026/#/
+## API documentation with Swagger
+The open educational API endpoints used for learning analytics are documented with [Swagger UI](https://github.com/swagger-api/swagger-ui).
+Swagger dynamically generates a site for live testing and exploring the API.
 
 
 #### Requirements
@@ -32,7 +23,7 @@ Although not necessary you can modify API definitions in a convenient way:
 
 * swagger project edit
 
-## Standard recipes
+This opens a browser allowing live editing of API definitions.
 
 
 ## OpenLRS
@@ -108,3 +99,6 @@ as learning activities. The open educational API could internally generate xAPI 
 ## xAPI swagger
 The xAPI specification is already defined in swagger it seems. The [xAPI-swagger repo](https://github.com/TryxAPI/xapi-swagger) hosts a yaml file which can be loaded
 into Swagger UI so you can explore it. Here is the [visualization of xAPI specification](http://editor.swagger.io/#/?import=https://raw.githubusercontent.com/TryxAPI/xapi-swagger/master/xapi-swagger.yaml).
+
+
+## Standard recipes
